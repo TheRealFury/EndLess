@@ -24,7 +24,7 @@ function preload(){
   restartImg = loadImage("Images/restart.png");
 }
 function setup() {
-  createCanvas(600, 200);
+  createCanvas(600, 400);
   trex = createSprite(50,180,20,50);
   trex.addAnimation("running", trex_running);
   trex.addAnimation("collided", trex_collided);
