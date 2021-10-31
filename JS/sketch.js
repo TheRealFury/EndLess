@@ -33,9 +33,9 @@ function setup() {
   ground.addImage("ground",groundImage);
   ground.x = ground.width /2;
   ground.velocityX = -(6 + 3*score/100);
-  gameOver = createSprite(300,100);
+  gameOver = createSprite(70,40);
   gameOver.addImage(gameOverImg);
-  restart = createSprite(300,140);
+  restart = createSprite(70,80);
   restart.addImage(restartImg);
   gameOver.scale = 0.5;
   restart.scale = 0.5;
@@ -50,7 +50,8 @@ function setup() {
 
 function draw() {
   background(255);
-  text("Score: "+ score, 500,50);
+  fill('black');
+  text("Score: "+ score, 250,10);
   
   if(gameState===PLAY){
     score = score + Math.round(getFrameRate()/60);
